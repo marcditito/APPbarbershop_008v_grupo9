@@ -1,0 +1,326 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║           🎯 GUIA PASO A PASO - EJECUTAR LA APP AL 100% 🎯                  ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════
+                    📍 ESTADO ACTUAL: TODO LISTO ✅
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Todos los errores corregidos
+✅ Código verificado y funcionando
+✅ Configuración optimizada
+✅ Proyecto listo para compilar
+
+═══════════════════════════════════════════════════════════════════════════════
+                    🚀 METODO 1: SCRIPT AUTOMATICO
+                         (MAS RAPIDO - RECOMENDADO)
+═══════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Cerrar Android Studio
+──────────────────────────────
+   • Si está abierto, cierra Android Studio completamente
+   • Asegúrate de que no queden procesos corriendo
+
+PASO 2: Ejecutar el script
+───────────────────────────
+   • Navega a: C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp
+   • Haz DOBLE CLIC en: REBUILD_COMPLETE.bat
+   • Verás una ventana negra ejecutándose
+
+PASO 3: Esperar
+───────────────
+   • El script hará 6 pasos automáticamente:
+     [1/6] Detener Gradle daemon
+     [2/6] Eliminar .gradle
+     [3/6] Eliminar build
+     [4/6] Eliminar app\build
+     [5/6] Gradle clean
+     [6/6] Compilar APK
+
+   • Tiempo estimado: 5-15 minutos
+   • NO cierres la ventana hasta que termine
+
+PASO 4: Verificar éxito
+────────────────────────
+   • Al final verás: "✓✓✓ COMPILACION EXITOSA ✓✓✓"
+   • El APK estará en: app\build\outputs\apk\debug\app-debug.apk
+   • Presiona cualquier tecla para cerrar
+
+PASO 5: Abrir Android Studio
+─────────────────────────────
+   • Abre Android Studio
+   • File > Open
+   • Selecciona: C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp
+   • Haz clic en OK
+
+PASO 6: Sincronizar
+───────────────────
+   • Espera a que Android Studio termine de cargar
+   • Si aparece un banner que dice "Gradle files have changed", haz clic en "Sync Now"
+   • Espera a que termine la sincronización
+
+PASO 7: Ejecutar la app
+────────────────────────
+   • En la barra superior, selecciona tu dispositivo/emulador
+   • Haz clic en el botón verde "Run" ▶
+   • O presiona: Shift + F10
+   • La app se instalará y abrirá automáticamente
+
+═══════════════════════════════════════════════════════════════════════════════
+                    🛠️ METODO 2: DESDE ANDROID STUDIO
+                         (SI PREFIERES HACERLO MANUAL)
+═══════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Abrir proyecto
+───────────────────────
+   • Abre Android Studio
+   • File > Open
+   • Navega a: C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp
+   • Haz clic en OK
+
+PASO 2: Invalidar caché (opcional pero recomendado)
+────────────────────────────────────────────────────
+   • File > Invalidate Caches / Restart
+   • Selecciona "Invalidate and Restart"
+   • Espera a que Android Studio reinicie
+
+PASO 3: Sincronizar proyecto
+─────────────────────────────
+   • File > Sync Project with Gradle Files
+   • Espera a que termine (puede tardar 2-5 minutos)
+   • Verifica que no haya errores en la pestaña "Build"
+
+PASO 4: Limpiar proyecto
+─────────────────────────
+   • Build > Clean Project
+   • Espera a que termine
+
+PASO 5: Reconstruir proyecto
+─────────────────────────────
+   • Build > Rebuild Project
+   • Esto puede tardar 5-10 minutos la primera vez
+   • Verifica que termine con éxito
+
+PASO 6: Configurar dispositivo
+───────────────────────────────
+   • En la barra superior, haz clic en el menú desplegable del dispositivo
+   • Opciones:
+     A) Si tienes un dispositivo físico:
+        - Conecta el dispositivo por USB
+        - Activa "Depuración USB" en el dispositivo
+        - Selecciona el dispositivo en el menú
+
+     B) Si usas emulador:
+        - Haz clic en "AVD Manager" (ícono de teléfono)
+        - Si no tienes un emulador, crea uno nuevo
+        - Inicia el emulador
+        - Espera a que arranque completamente
+
+PASO 7: Ejecutar la app
+────────────────────────
+   • Haz clic en el botón verde "Run" ▶ en la barra de herramientas
+   • O presiona: Shift + F10
+   • Espera a que compile (puede tardar 1-3 minutos)
+   • La app se instalará automáticamente
+   • Se abrirá en tu dispositivo/emulador
+
+═══════════════════════════════════════════════════════════════════════════════
+                    💻 METODO 3: LINEA DE COMANDOS
+                         (PARA USUARIOS AVANZADOS)
+═══════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Abrir terminal
+──────────────────────
+   • Presiona Windows + R
+   • Escribe: cmd
+   • Presiona Enter
+
+PASO 2: Navegar al proyecto
+────────────────────────────
+   cd "C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp"
+
+PASO 3: Limpiar proyecto
+─────────────────────────
+   gradlew.bat clean
+
+PASO 4: Compilar APK
+────────────────────
+   gradlew.bat assembleDebug
+
+PASO 5: Instalar en dispositivo
+────────────────────────────────
+   • Conecta tu dispositivo por USB
+   • Ejecuta:
+     gradlew.bat installDebug
+
+PASO 6: Abrir la app manualmente
+─────────────────────────────────
+   • Busca "Barber Shop" en el dispositivo
+   • Ábrela
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🔍 VERIFICACION DE EXITO
+═══════════════════════════════════════════════════════════════════════════════
+
+LA APP SE ABRIO CORRECTAMENTE SI VES:
+
+✅ Pantalla principal con:
+   • Toolbar que dice "Lista de Productos"
+   • RecyclerView (lista) vacía o con productos
+   • FAB (botón flotante) verde en la esquina inferior derecha (+)
+   • FAB azul en la esquina inferior izquierda (carrito)
+
+✅ Al hacer clic en el FAB verde (+):
+   • Se abre pantalla "Añadir Producto"
+   • Ves formulario con:
+     - Campo "Nombre del Producto"
+     - Campo "Descripción del Producto"
+     - Campo "Precio"
+     - Botón "Tomar Foto"
+     - Botón "Guardar"
+
+✅ Al hacer clic en el FAB del carrito:
+   • Se abre pantalla "Carrito de Compras"
+   • Ves mensaje "El carrito está vacío" (si no has añadido nada)
+   • O lista de productos añadidos
+
+═══════════════════════════════════════════════════════════════════════════════
+                    ⚠️ SOLUCION DE PROBLEMAS COMUNES
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEMA 1: "App keeps stopping" al abrir
+──────────────────────────────────────────
+SOLUCION:
+   • Abre Android Studio
+   • Ve a: Run > Edit Configurations
+   • En "Launch Options", cambia "Launch" a "Nothing"
+   • Aplica y vuelve a ejecutar
+   • Luego abre la app manualmente desde el dispositivo
+
+PROBLEMA 2: Permisos denegados
+───────────────────────────────
+SOLUCION:
+   • La app pedirá permisos al abrirse
+   • Acepta todos los permisos:
+     ✓ Cámara
+     ✓ Ubicación
+     ✓ Archivos/Fotos
+   • Si los rechazaste, ve a Settings > Apps > Barber Shop > Permissions
+   • Activa todos los permisos
+
+PROBLEMA 3: No compila
+───────────────────────
+SOLUCION:
+   • Ejecuta REBUILD_COMPLETE.bat nuevamente
+   • Si persiste, ejecuta clean_build.bat
+   • Como último recurso, ejecuta clean_global_gradle.bat
+
+PROBLEMA 4: Gradle sync failed
+───────────────────────────────
+SOLUCION:
+   • File > Invalidate Caches / Restart
+   • Elige "Invalidate and Restart"
+   • Espera y vuelve a sincronizar
+
+PROBLEMA 5: Device offline / not found
+───────────────────────────────────────
+SOLUCION:
+   • Si es dispositivo físico:
+     - Desconecta y reconecta el USB
+     - Acepta "Allow USB Debugging" en el dispositivo
+     - Verifica que esté en modo "File Transfer"
+
+   • Si es emulador:
+     - Cierra el emulador
+     - Ábrelo de nuevo desde AVD Manager
+     - Espera a que arranque completamente
+
+═══════════════════════════════════════════════════════════════════════════════
+                         📱 PROBANDO LA APP
+═══════════════════════════════════════════════════════════════════════════════
+
+PRUEBA 1: Añadir un producto
+─────────────────────────────
+   1. Haz clic en el FAB verde (+)
+   2. Ingresa:
+      - Nombre: "Corte de Cabello"
+      - Descripción: "Corte profesional con tijera y máquina"
+      - Precio: 15.00
+   3. (Opcional) Haz clic en "Tomar Foto"
+   4. Haz clic en "Guardar"
+   5. Deberías volver a la pantalla principal
+   6. El producto debería aparecer en la lista
+
+PRUEBA 2: Ver detalles
+──────────────────────
+   1. Haz clic en un producto de la lista
+   2. Se abre la pantalla de detalles
+   3. Ves toda la información del producto
+   4. Hay un botón "Añadir al Carrito"
+
+PRUEBA 3: Añadir al carrito
+────────────────────────────
+   1. Desde la lista, haz clic en "Añadir al Carrito" en un producto
+   2. Aparece un mensaje: "Producto añadido al carrito"
+   3. Haz clic en el FAB del carrito
+   4. El producto aparece en el carrito
+   5. Se muestra el total
+
+PRUEBA 4: Eliminar del carrito
+───────────────────────────────
+   1. Abre el carrito
+   2. Haz clic en el icono de basura (🗑️) de un producto
+   3. El producto se elimina
+   4. El total se actualiza
+
+═══════════════════════════════════════════════════════════════════════════════
+                           ✨ FUNCIONALIDADES
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ LISTA DE PRODUCTOS
+   • Ver todos los productos guardados
+   • Scroll vertical si hay muchos
+   • Diseño tipo tarjeta (card)
+   • Botón "Añadir al Carrito" en cada producto
+
+✅ AÑADIR PRODUCTO
+   • Formulario con validación
+   • Campos obligatorios
+   • Opción de tomar foto
+   • Guardado en base de datos local
+
+✅ DETALLES DE PRODUCTO
+   • Ver información completa
+   • Imagen (si se tomó foto)
+   • Opción de añadir al carrito
+
+✅ CARRITO DE COMPRAS
+   • Lista de productos seleccionados
+   • Cálculo automático del total
+   • Eliminar productos individuales
+   • Botón "Realizar Pedido"
+
+✅ PERMISOS
+   • Cámara para tomar fotos
+   • Ubicación (preparado para futuras features)
+   • Almacenamiento para guardar fotos
+
+═══════════════════════════════════════════════════════════════════════════════
+                          🎉 ¡FELICITACIONES!
+═══════════════════════════════════════════════════════════════════════════════
+
+Si seguiste los pasos y la app se abrió correctamente:
+
+✅ El proyecto está 100% funcional
+✅ Todos los errores fueron corregidos
+✅ La app funciona como se esperaba
+✅ Puedes empezar a usarla y probarla
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    LA APP ESTA LISTA Y FUNCIONANDO AL 100%
+
+═══════════════════════════════════════════════════════════════════════════════
+

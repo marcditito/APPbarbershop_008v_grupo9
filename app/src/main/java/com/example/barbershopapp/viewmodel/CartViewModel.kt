@@ -1,29 +1,27 @@
 package com.example.barbershopapp.viewmodel
 
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.barbershopapp.data.CartItem
-import com.example.barbershopapp.data.CartRepository
 import com.example.barbershopapp.data.Product
 
-/**
- * ViewModel for cart operations. Delegates actions to the CartRepository
- * and exposes LiveData so the UI can observe cart changes. Contains
- * logic for calculating the total price.
- */
 class CartViewModel : ViewModel() {
-    private val repository = CartRepository()
-    val cartItems: LiveData<MutableList<CartItem>> = repository.cartItems
+    private val _cartItems = MutableLiveData<List<Product>>(emptyList())
+    val cartItems: LiveData<List<Product>> = _cartItems
 
     fun addToCart(product: Product) {
-        repository.addItem(product)
+        val currentItems = _cartItems.value.orEmpty().toMutableList()
+        currentItems.add(product)
+        _cartItems.value = currentItems
     }
 
     fun removeFromCart(product: Product) {
-        repository.removeItem(product)
+        val currentItems = _cartItems.value.orEmpty().toMutableList()
+        currentItems.remove(product)
+        _cartItems.value = currentItems
     }
 
-    fun getTotal(): Double {
-        return repository.getTotal()
+    fun clearCart() {
+        _cartItems.value = emptyList()
     }
 }

@@ -1,0 +1,96 @@
+SOLUCION COMPLETA - ERROR GRADLE DAEMON
+========================================
+
+PROBLEMA:
+El error "Unrecognized VM option 'MaxPermSize=1024m'" ocurre porque esa opción
+es obsoleta en Java 17 y no se acepta en versiones modernas de Java.
+
+SOLUCION APLICADA:
+==================
+
+1. ✅ MODIFICADO: gradle.properties
+   - Se eliminó: -XX:MaxPermSize=1024m
+   - Quedó: org.gradle.jvmargs=-Xmx4096m
+   Ubicación: C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\gradle.properties
+
+2. ✅ CREADO: fix_gradle.bat
+   Script automático para limpiar todo y reconstruir.
+   Ubicación: C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\fix_gradle.bat
+
+PASOS PARA RESOLVER COMPLETAMENTE:
+===================================
+
+OPCION A - Ejecución automática (RECOMENDADO):
+-----------------------------------------------
+1. Cierra Android Studio completamente
+2. Ve a: C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp
+3. Haz doble clic en "fix_gradle.bat"
+4. Espera a que termine (verás un "pause" al final)
+5. Presiona cualquier tecla para cerrar la ventana
+6. Abre Android Studio nuevamente
+7. Haz clic en: Build > Rebuild Project
+8. Una vez completado, ve a: Run > Run 'app'
+
+OPCION B - Ejecución manual (si prefieres):
+--------------------------------------------
+1. Cierra Android Studio completamente
+2. Abre una terminal (cmd.exe)
+3. Navega al proyecto:
+   cd "C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp"
+4. Ejecuta estos comandos en orden:
+   gradlew.bat --stop
+   gradlew.bat clean
+   gradlew.bat assembleDebug
+
+OPCION C - Desde Android Studio:
+--------------------------------
+1. Cierra Android Studio completamente
+2. Elimina estas carpetas manualmente:
+   - .gradle (carpeta oculta en la raíz del proyecto)
+   - build (en la raíz)
+   - app\build
+3. Abre Android Studio
+4. Ve a: File > Invalidate Caches / Restart
+5. Elige "Invalidate and Restart"
+6. Una vez reiniciada, haz clic en: Build > Rebuild Project
+
+QUE HACER SI PERSISTEN LOS ERRORES:
+====================================
+
+Si después de seguir los pasos anteriores aún ves errores de Kotlin:
+
+1. En Android Studio, ve a: File > Project Structure
+2. En "Project", verifica que la versión de Kotlin sea 1.9.x o compatible
+3. Si dice 2.1.x pero tienes 1.9.x instalado, hay mismatch de versiones
+
+Para sincronizar versiones (en build.gradle raíz):
+   buildscript {
+       dependencies {
+           classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22"
+       }
+   }
+
+O si quieres usar Kotlin 2.1.20, todos los plugins deben ser 2.1.20
+
+VERIFICACION:
+=============
+
+Después de reconstruir, ejecuta:
+   gradlew.bat --version
+
+Debe mostrar una versión compatible sin errores de MaxPermSize.
+
+SI SIGUE SIN FUNCIONAR:
+=======================
+
+Ejecuta este comando para ver detalles del error:
+   gradlew.bat --info clean
+
+Busca en la salida la línea que mencione MaxPermSize o jvmargs.
+Si aún aparece MaxPermSize, revisa en:
+   - C:\Users\duran\.gradle\gradle.properties (caché global)
+   - Variables de entorno (GRADLE_OPTS, JAVA_OPTS)
+   - Configuración de Android Studio: File > Settings > Build, Execution, Deployment > Gradle
+
+¡Listo! Debería funcionar ahora.
+

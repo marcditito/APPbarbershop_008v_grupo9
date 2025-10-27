@@ -24,8 +24,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|end"
         android:src="@android:drawable/ic_menu_view"
-        app:layout_anchor="@id/recyclerView"
-        app:layout_anchorGravity="bottom|end" />
+        android:contentDescription="@string/cart" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|start"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add_product" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

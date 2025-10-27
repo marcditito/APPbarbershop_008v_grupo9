@@ -1,34 +1,70 @@
 package com.example.barbershopapp.ui
 
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.barbershopapp.R
+import com.example.barbershopapp.data.Product
 import com.example.barbershopapp.databinding.ActivityCartBinding
 import com.example.barbershopapp.viewmodel.CartViewModel
+import java.text.NumberFormat
+import java.util.*
 
-/**
- * Shows the list of items that the user has added to their cart and the
- * total price. The cart is observed via LiveData so updates are
- * reflected automatically.
- */
 class CartActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCartBinding
-    private val cartViewModel: CartViewModel by viewModels()
     private lateinit var adapter: CartAdapter
+    private val viewModel: CartViewModel by lazy {
+        ViewModelProvider(this)[CartViewModel::class.java]
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        adapter = CartAdapter(emptyList())
-        binding.cartRecyclerView.layoutManager = LinearLayoutManager(this)
-        binding.cartRecyclerView.adapter = adapter
+        setupToolbar()
+        setupRecyclerView()
+        observeCart()
+    }
 
-        cartViewModel.cartItems.observe(this) { items ->
-            adapter.updateData(items)
-            binding.textTotal.text = "Total: $${'$'}{String.format("%.2f", cartViewModel.getTotal())}"
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressed()
         }
+    }
+
+    private fun setupRecyclerView() {
+        adapter = CartAdapter(
+            products = emptyList(),
+            onRemoveItem = { product ->
+                viewModel.removeFromCart(product)
+            }
+        )
+
+        binding.cartRecyclerView.apply {
+            layoutManager = LinearLayoutManager(this@CartActivity)
+            this.adapter = this@CartActivity.adapter
+        }
+
+        binding.buttonCheckout.setOnClickListener {
+            // Implementar checkout aquí
+            viewModel.clearCart()
+        }
+    }
+
+    private fun observeCart() {
+        viewModel.cartItems.observe(this) { products ->
+            adapter.updateCart(products)
+            updateTotal(products)
+        }
+    }
+
+    private fun updateTotal(products: List<Product>) {
+        val total = products.fold(0.0) { acc, product -> acc + product.price }
+        val numberFormat = NumberFormat.getCurrencyInstance(Locale.getDefault())
+        binding.textTotal.text = numberFormat.format(total)
     }
 }

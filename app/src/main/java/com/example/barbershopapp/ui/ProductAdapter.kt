@@ -32,7 +32,7 @@ class ProductAdapter(
         fun bind(product: Product) {
             name.text = product.name
             description.text = product.description
-            price.text = "$${'$'}{product.price}"
+            price.text = String.format("$%.2f", product.price)
             // Loading image from URI could be implemented with Glide or Coil. For simplicity we use a placeholder.
             buttonAdd.setOnClickListener {
                 onAddToCart(product)
@@ -42,6 +42,11 @@ class ProductAdapter(
             }
             AnimationsUtil.fadeIn(itemView)
         }
+    }
+
+    fun updateProducts(newProducts: List<Product>) {
+        products = newProducts
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {

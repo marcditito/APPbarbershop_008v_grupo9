@@ -5,6 +5,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 
 /**
  * Data access object used by Room to perform CRUD operations on
@@ -14,12 +15,16 @@ import androidx.room.Query
 @Dao
 interface ProductDao {
     /** Returns a list of all products as observable LiveData. */
-    @Query("SELECT * FROM Product")
+    @Query("SELECT * FROM products")
     fun getAll(): LiveData<List<Product>>
 
     /** Inserts a new product into the database. */
     @Insert
     suspend fun insert(product: Product)
+
+    /** Updates an existing product in the database. */
+    @Update
+    suspend fun update(product: Product)
 
     /** Deletes an existing product from the database. */
     @Delete
