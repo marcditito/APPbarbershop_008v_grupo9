@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#000000</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <string name="add_product">Añadir Producto</string>
+    <string name="add_to_cart">Añadir al Carrito</string>
+    <string name="added_to_cart">Producto añadido al carrito</string>
+    <string name="app_name">Barber Shop</string>
+    <string name="cart">Carrito de Compras</string>
+    <string name="cart_empty">El carrito está vacío</string>
+    <string name="checkout">Realizar Pedido</string>
+    <string name="error_empty_fields">Por favor, completa todos los campos</string>
+    <string name="product_description">Descripción del Producto</string>
+    <string name="product_list">Lista de Productos</string>
+    <string name="product_name">Nombre del Producto</string>
+    <string name="product_price">Precio</string>
+    <string name="remove_from_cart">Eliminar del carrito</string>
+    <string name="save">Guardar</string>
+    <string name="select_photo">Seleccionar Foto</string>
+    <string name="success_save">Producto guardado exitosamente</string>
+    <string name="take_photo">Tomar Foto</string>
+    <string name="total">Total:</string>
+    <style name="Theme.BarberShopApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/purple_700</item>
+        
+    </style>
+</resources>
