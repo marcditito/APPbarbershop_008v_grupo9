@@ -3,46 +3,22 @@ package com.example.barbershopapp.ui
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.barbershopapp.R
-import com.example.barbershopapp.data.Product
-import com.example.barbershopapp.utils.AnimationsUtil
+import com.example.barbershopapp.model.Product
+import com.google.android.material.button.MaterialButton
 
 /**
- * RecyclerView adapter used to display a list of [Product] items. Handles
- * click callbacks for opening the product detail and adding items to
- * the cart. Uses a simple fade‑in animation when binding views.
+ * Adapter para mostrar productos en RecyclerView con layout personalizado
  */
 class ProductAdapter(
-    private var products: List<Product>,
-    private val onItemClick: (Product) -> Unit,
-    private val onAddToCart: (Product) -> Unit
+    private val onProductClick: (Product) -> Unit,
+    private val onAddToCartClick: (Product) -> Unit
 ) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
-    inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val image: ImageView = itemView.findViewById(R.id.imageView)
-        private val name: TextView = itemView.findViewById(R.id.textName)
-        private val description: TextView = itemView.findViewById(R.id.textDescription)
-        private val price: TextView = itemView.findViewById(R.id.textPrice)
-        private val buttonAdd: Button = itemView.findViewById(R.id.buttonAdd)
-
-        fun bind(product: Product) {
-            name.text = product.name
-            description.text = product.description
-            price.text = String.format("$%.2f", product.price)
-            // Loading image from URI could be implemented with Glide or Coil. For simplicity we use a placeholder.
-            buttonAdd.setOnClickListener {
-                onAddToCart(product)
-            }
-            itemView.setOnClickListener {
-                onItemClick(product)
-            }
-            AnimationsUtil.fadeIn(itemView)
-        }
-    }
+    private var products: List<Product> = emptyList()
 
     fun updateProducts(newProducts: List<Product>) {
         products = newProducts
@@ -50,7 +26,9 @@ class ProductAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_product, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(
+            R.layout.item_product, parent, false
+        )
         return ProductViewHolder(view)
     }
 
@@ -60,8 +38,38 @@ class ProductAdapter(
 
     override fun getItemCount(): Int = products.size
 
-    fun updateData(newList: List<Product>) {
-        products = newList
-        notifyDataSetChanged()
+    inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val imageProduct: ImageView = itemView.findViewById(R.id.imageProduct)
+        private val textProductName: TextView = itemView.findViewById(R.id.textProductName)
+        private val textProductDescription: TextView = itemView.findViewById(R.id.textProductDescription)
+        private val textProductPrice: TextView = itemView.findViewById(R.id.textProductPrice)
+        private val textProductStock: TextView = itemView.findViewById(R.id.textProductStock)
+        private val buttonAddToCart: MaterialButton = itemView.findViewById(R.id.buttonAddToCart)
+
+        fun bind(product: Product) {
+            textProductName.text = product.name
+            textProductDescription.text = product.description
+            textProductPrice.text = "$${String.format("%.2f", product.price)}"
+            textProductStock.text = "Stock: ${product.stock}"
+
+            // Click en el producto para ver detalles
+            itemView.setOnClickListener {
+                onProductClick(product)
+            }
+
+            // Click en el botón para agregar al carrito
+            buttonAddToCart.setOnClickListener {
+                onAddToCartClick(product)
+            }
+
+            // Cambiar color del botón según el stock
+            if (product.stock > 0) {
+                buttonAddToCart.isEnabled = true
+                buttonAddToCart.text = "Agregar al Carrito"
+            } else {
+                buttonAddToCart.isEnabled = false
+                buttonAddToCart.text = "Sin Stock"
+            }
+        }
     }
 }

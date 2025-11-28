@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.barbershopapp-mergeDebugResources-46:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.example.barbershopapp-mergeDebugResources-45:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\e8b93d57783ee0690ddea0f3af5a92ca\\transformed\\material-1.11.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\c1da83fc42a6fbc64ecb3a3f8cbf898a\\transformed\\material-1.12.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

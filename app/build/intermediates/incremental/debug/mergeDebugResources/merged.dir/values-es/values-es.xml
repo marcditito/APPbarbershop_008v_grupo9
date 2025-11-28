@@ -31,6 +31,12 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string name="add_product">Agregar Nuevo Producto</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="app_name">BarberShop App</string>
+    <string name="availability">Disponibilidad</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"Usa la biometría o tu bloqueo de pantalla para continuar"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"Usa la biometría para continuar"</string>
     <string name="bottomsheet_action_collapse">Ocultar la hoja inferior</string>
     <string name="bottomsheet_action_expand">Mostrar la hoja inferior</string>
     <string name="bottomsheet_action_expand_halfway">Desplegar hasta la mitad</string>
@@ -43,6 +49,9 @@
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"Llamada entrante"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Llamada en curso"</string>
     <string msgid="59049573811482460" name="call_notification_screening_text">"Filtrando una llamada entrante"</string>
+    <string name="camera_error">Error al abrir la cámara</string>
+    <string name="cancel">Cancelar</string>
+    <string name="category">Categoría</string>
     <string name="character_counter_content_description">Caracteres introducidos: %1$d de %2$d</string>
     <string name="character_counter_overflowed_content_description">Límite de caracteres superado (%1$d de %2$d)</string>
     <string name="clear_text_end_icon_content_description">Borrar texto</string>
@@ -64,24 +73,65 @@
     <string name="common_open_on_phone">Abrir en teléfono</string>
     <string name="common_signin_button_text">Iniciar sesión</string>
     <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
+    <string name="confirm_delete">¿Está seguro de que desea eliminar este producto?</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Usar contraseña"</string>
+    <string name="confirm_empty_cart">¿Desea vaciar el carrito?</string>
+    <string name="confirm_order">¿Desea confirmar su pedido?</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"Error desconocido"</string>
+    <string name="edit">Editar</string>
+    <string name="empty_cart">Tu carrito está vacío</string>
+    <string name="error_a11y_label">Error: no válida</string>
     <string name="error_icon_content_description">Error</string>
+    <string name="error_loading">Error al cargar los datos</string>
+    <string name="exit">Salir</string>
+    <string name="exit_confirmation">¿Desea salir?</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"Usa la cara o tu bloqueo de pantalla para continuar"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"Usa la cara para continuar"</string>
+    <string name="favorite">Favorito</string>
+    <string name="filter">Filtrar</string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"Icono de huella digital"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Toca sensor huellas digitales"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"El hardware de huella digital no está disponible."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"El dispositivo no tiene ningún sensor de huellas digitales"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Has realizado demasiados intentos. Vuelve a probar más tarde."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"No se ha registrado ninguna huella digital."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"El usuario ha cancelado la operación de huella digital."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"No se reconoce"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"Usa la huella digital o tu bloqueo de pantalla para continuar"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"Usa la huella digital para continuar"</string>
+    <string name="fix_errors">Por favor, corrija los errores</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"No se ha definido el PIN, el patrón o la contraseña."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"Este dispositivo no admite PINs, patrones ni contraseñas."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"El usuario ha cancelado la autenticación."</string>
     <string name="icon_content_description">Icono del cuadro de diálogo</string>
+    <string name="in_stock">En stock</string>
     <string name="item_view_role_description">Pestaña</string>
+    <string name="loading">Cargando…</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="logout">Cerrar sesión</string>
     <string name="material_clock_toggle_content_description">Selecciona AM o PM</string>
     <string name="material_hour_24h_suffix">%1$s horas</string>
     <string name="material_hour_selection">Seleccionar hora</string>
     <string name="material_hour_suffix">%1$s en punto</string>
     <string name="material_minute_selection">Seleccionar minutos</string>
     <string name="material_minute_suffix">%1$s minutos</string>
-    <string name="material_timepicker_am">A.M.</string>
+    <string name="material_timepicker_am">a. m.</string>
     <string name="material_timepicker_clock_mode_description">Cambia al modo de reloj para escribir la hora.</string>
     <string name="material_timepicker_hour">Hora</string>
     <string name="material_timepicker_minute">Minuto</string>
-    <string name="material_timepicker_pm">P.M.</string>
+    <string name="material_timepicker_pm">p. m.</string>
     <string name="material_timepicker_select_time">Seleccionar la hora</string>
     <string name="material_timepicker_text_input_mode_description">Cambia al modo de introducción de texto para escribir la hora.</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_cart">Carrito</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_settings">Ajustes</string>
     <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>
+    <string name="mtrl_checkbox_state_description_checked">Marcada</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Marcada parcialmente</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Sin marcar</string>
     <string name="mtrl_chip_close_icon_content_description">Retirar %1$s</string>
     <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Más de %1$d notificaciones nuevas</string>
     <string name="mtrl_picker_a11y_next_month">Cambiar al mes siguiente</string>
@@ -94,7 +144,7 @@
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Selecciona una fecha</string>
     <string name="mtrl_picker_date_header_unselected">Fecha seleccionada</string>
-    <string name="mtrl_picker_day_of_week_column_header">Columna de días: %1$s</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
     <string name="mtrl_picker_end_date_description">Fecha de finalización: %1$s</string>
     <string name="mtrl_picker_invalid_format">Formato no válido.</string>
     <string name="mtrl_picker_invalid_format_example">Ejemplo: %1$s</string>
@@ -123,7 +173,44 @@
     <string name="mtrl_picker_toggle_to_year_selection">Toca para cambiar a la vista de año</string>
     <string name="mtrl_timepicker_cancel">Cancelar</string>
     <string name="mtrl_timepicker_confirm">Aceptar</string>
+    <string name="no_products">No hay productos disponibles</string>
+    <string name="ok">OK</string>
+    <string name="order_complete">Pedido completado</string>
+    <string name="order_confirmed">Pedido confirmado</string>
+    <string name="order_processing">Procesando pedido</string>
+    <string name="out_of_stock">Agotado</string>
     <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string name="photo_success">¡Imagen capturada con éxito!</string>
+    <string name="product_added">¡Producto agregado exitosamente!</string>
+    <string name="product_description">Descripción</string>
+    <string name="product_details">Detalles del producto</string>
+    <string name="product_list">Lista de productos</string>
+    <string name="product_name">Nombre del producto</string>
+    <string name="product_price">Precio</string>
+    <string name="product_quantity">Cantidad</string>
+    <string name="profile_settings">Configuración del perfil</string>
+    <string name="register">Registrarse</string>
+    <string name="remove">Eliminar</string>
+    <string name="retry">Reintentar</string>
+    <string name="save">Guardar</string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"Introduce tu bloqueo de pantalla para continuar"</string>
+    <string name="search">Buscar productos</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
+    <string name="searchview_clear_text_content_description">Borrar texto</string>
+    <string name="searchview_navigation_content_description">Atrás</string>
+    <string name="share">Compartir</string>
+    <string name="side_sheet_accessibility_pane_title">Hoja lateral</string>
+    <string name="sort">Ordenar</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="take_picture">Tomar Foto</string>
+    <string name="total_price">Precio total</string>
+    <string name="unsaved_changes">Los cambios no guardados se perderán</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"Usar biometría"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"Usar biometría o bloqueo de pantalla"</string>
+    <string msgid="6533512708069459542" name="use_face_label">"Usar cara"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"Usar cara o bloqueo de pantalla"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"Usar huella digital"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"Usar huella digital o bloqueo de pantalla"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"Usar bloqueo de pantalla"</string>
+    <string name="welcome_message">Bienvenido a BarberShop</string>
 </resources>

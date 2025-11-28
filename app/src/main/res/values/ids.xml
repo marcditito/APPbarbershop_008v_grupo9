@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- IDs para elementos de UI programáticos -->
+    <item name="input_field" type="id" />
+    <item name="category_button" type="id" />
+    <item name="preview_card" type="id" />
+    <item name="product_emoji" type="id" />
+    <item name="product_info" type="id" />
+    <item name="quantity_text" type="id" />
+    <item name="total_price" type="id" />
+    <item name="toolbar_title" type="id" />
+    <item name="welcome_text" type="id" />
+    <item name="cart_button" type="id" />
+</resources>
+

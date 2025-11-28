@@ -1,29 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Barber Shop</string>
+    <string name="app_name">BarberShopApp</string>
 
-    <!-- Textos para la lista de productos -->
-    <string name="product_list">Lista de Productos</string>
-    <string name="add_to_cart">Añadir al Carrito</string>
-    <string name="added_to_cart">Producto añadido al carrito</string>
-    <string name="add_product">Añadir Producto</string>
+    <!-- Strings para MainActivity -->
+    <string name="logo">Logo</string>
+    <string name="shop_title">Tienda de Barbería</string>
+    <string name="shop_subtitle">Productos profesionales para barbería</string>
+    <string name="product_list_title">Lista de Productos</string>
+    <string name="no_products">Sin productos</string>
+    <string name="no_products_title">No hay productos</string>
+    <string name="no_products_message">Presiona el botón + para agregar</string>
 
-    <!-- Textos para añadir/editar productos -->
-    <string name="product_name">Nombre del Producto</string>
-    <string name="product_description">Descripción del Producto</string>
-    <string name="product_price">Precio</string>
+    <!-- Strings para el carrito -->
+    <string name="cart">Carrito</string>
+    <string name="total">Total</string>
+    <string name="checkout">Pagar</string>
+    <string name="remove_from_cart">Eliminar del carrito</string>
+    <string name="added_to_cart">Agregado al carrito</string>
+
+    <!-- Otros strings -->
+    <string name="add_product">Agregar producto</string>
+    <string name="availability">Disponibilidad</string>
+    <string name="camera_error">Error de cámara</string>
+    <string name="cancel">Cancelar</string>
+    <string name="category">Categoría</string>
+    <string name="confirm_delete">Confirmar eliminación</string>
+    <string name="confirm_empty_cart">¿Desea vaciar el carrito?</string>
+    <string name="confirm_order">Confirmar pedido</string>
+    <string name="edit">Editar</string>
+    <string name="empty_cart">Carrito vacío</string>
+    <string name="error_loading">Error al cargar</string>
+    <string name="exit">Salir</string>
+    <string name="exit_confirmation">¿Desea salir?</string>
+    <string name="favorite">Favorito</string>
+    <string name="filter">Filtrar</string>
+    <string name="fix_errors">Corregir errores</string>
+    <string name="in_stock">En stock</string>
+    <string name="loading">Cargando...</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_cart">Carrito</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="ok">Aceptar</string>
+    <string name="order_complete">Pedido completado</string>
+    <string name="order_confirmed">Pedido confirmado</string>
+    <string name="order_processing">Procesando pedido</string>
+    <string name="out_of_stock">Agotado</string>
+    <string name="photo_success">Foto guardada exitosamente</string>
+    <string name="product_added">Producto agregado</string>
+    <string name="product_details">Detalles del producto</string>
+    <string name="product_quantity">Cantidad</string>
+    <string name="profile_settings">Configuración de perfil</string>
+    <string name="register">Registrarse</string>
+    <string name="remove">Eliminar</string>
+    <string name="retry">Reintentar</string>
+    <string name="search">Buscar</string>
+    <string name="share">Compartir</string>
+    <string name="sort">Ordenar</string>
+    <string name="take_picture">Tomar foto</string>
+    <string name="total_price">Precio total</string>
+    <string name="unsaved_changes">Cambios sin guardar</string>
+    <string name="welcome_message">Bienvenido</string>
+
+    <!-- Strings faltantes requeridas por la aplicación -->
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="product_description">Descripción del producto</string>
+    <string name="product_list">Lista de productos</string>
+    <string name="product_name">Nombre del producto</string>
+    <string name="product_price">Precio del producto</string>
     <string name="save">Guardar</string>
 
-    <!-- Otros textos -->
-    <string name="take_photo">Tomar Foto</string>
-    <string name="select_photo">Seleccionar Foto</string>
-    <string name="cart">Carrito de Compras</string>
-    <string name="error_empty_fields">Por favor, completa todos los campos</string>
-    <string name="success_save">Producto guardado exitosamente</string>
-
-    <!-- Textos para el carrito -->
-    <string name="total">Total:</string>
-    <string name="checkout">Realizar Pedido</string>
-    <string name="remove_from_cart">Eliminar del carrito</string>
-    <string name="cart_empty">El carrito está vacío</string>
+    <!-- Login y autenticación -->
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="email_hint">ejemplo@correo.com</string>
+    <string name="password_hint">Ingresa tu contraseña</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="dont_have_account">¿No tienes cuenta?</string>
+    <string name="sign_up">Regístrate</string>
+    <string name="or">O</string>
+    <string name="biometric_login">Ingresar con huella/rostro</string>
+    <string name="biometric_prompt_title">Autenticación biométrica</string>
+    <string name="biometric_prompt_subtitle">Usa tu huella o rostro para ingresar</string>
+    <string name="biometric_prompt_cancel">Cancelar</string>
+    <string name="biometric_error">Error de autenticación biométrica</string>
+    <string name="biometric_success">Autenticación exitosa</string>
+    <string name="biometric_not_available">Autenticación biométrica no disponible</string>
+    <string name="login_error">Error al iniciar sesión</string>
+    <string name="email_empty">El correo no puede estar vacío</string>
+    <string name="password_empty">La contraseña no puede estar vacía</string>
+    <string name="invalid_email">Correo electrónico inválido</string>
+    <string name="invalid_credentials">Credenciales inválidas</string>
+    <string name="welcome_back">¡Bienvenido de nuevo!</string>
+    <string name="login_subtitle">Inicia sesión para continuar</string>
 </resources>
+

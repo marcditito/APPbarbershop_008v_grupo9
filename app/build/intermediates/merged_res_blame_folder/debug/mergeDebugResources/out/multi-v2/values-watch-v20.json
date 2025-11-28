@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.barbershopapp-mergeDebugResources-46:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.barbershopapp-mergeDebugResources-45:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\db16b40e372d4429d0e56bac262a8a0c\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\10df799b1cd0690fbfa458551386bc9c\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

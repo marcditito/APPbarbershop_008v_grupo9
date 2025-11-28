@@ -1,0 +1,4 @@
+1. Desinstalar app del dispositivo
+2. Run → Run 'app'
+3. Login: demo@barbershop.com / 123456
+4. Ver diseño moderno ✅

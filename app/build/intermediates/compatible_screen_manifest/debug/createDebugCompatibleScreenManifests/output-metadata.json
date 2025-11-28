@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.example.barbershopapp",
+  "applicationId": "com.example.barbershopapp.debug",
   "variantName": "debug",
   "elements": []
 }

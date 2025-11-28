@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.barbershopapp-mergeDebugResources-46:/values-v18/values-v18.xml",
+            "outputFile": "com.example.barbershopapp-mergeDebugResources-45:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\db16b40e372d4429d0e56bac262a8a0c\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\10df799b1cd0690fbfa458551386bc9c\\transformed\\appcompat-1.7.0\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

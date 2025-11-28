@@ -4,52 +4,74 @@ package com.example.barbershopapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.barbershopapp.R;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityProductDetailBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Button buttonAddToCart;
+  public final AppBarLayout appBarLayout;
 
   @NonNull
-  public final TextView detailDescription;
+  public final MaterialButton buttonAddToCart;
 
   @NonNull
-  public final ImageView detailImage;
+  public final MaterialButton buttonViewCart;
 
   @NonNull
-  public final TextView detailName;
+  public final CollapsingToolbarLayout collapsingToolbar;
 
   @NonNull
-  public final TextView detailPrice;
+  public final ImageView imageProduct;
 
-  private ActivityProductDetailBinding(@NonNull ScrollView rootView,
-      @NonNull Button buttonAddToCart, @NonNull TextView detailDescription,
-      @NonNull ImageView detailImage, @NonNull TextView detailName, @NonNull TextView detailPrice) {
+  @NonNull
+  public final TextView textProductDescription;
+
+  @NonNull
+  public final TextView textProductName;
+
+  @NonNull
+  public final TextView textProductPrice;
+
+  @NonNull
+  public final MaterialToolbar toolbar;
+
+  private ActivityProductDetailBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull AppBarLayout appBarLayout, @NonNull MaterialButton buttonAddToCart,
+      @NonNull MaterialButton buttonViewCart, @NonNull CollapsingToolbarLayout collapsingToolbar,
+      @NonNull ImageView imageProduct, @NonNull TextView textProductDescription,
+      @NonNull TextView textProductName, @NonNull TextView textProductPrice,
+      @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
+    this.appBarLayout = appBarLayout;
     this.buttonAddToCart = buttonAddToCart;
-    this.detailDescription = detailDescription;
-    this.detailImage = detailImage;
-    this.detailName = detailName;
-    this.detailPrice = detailPrice;
+    this.buttonViewCart = buttonViewCart;
+    this.collapsingToolbar = collapsingToolbar;
+    this.imageProduct = imageProduct;
+    this.textProductDescription = textProductDescription;
+    this.textProductName = textProductName;
+    this.textProductPrice = textProductPrice;
+    this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -74,38 +96,63 @@ public final class ActivityProductDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appBarLayout;
+      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (appBarLayout == null) {
+        break missingId;
+      }
+
       id = R.id.buttonAddToCart;
-      Button buttonAddToCart = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton buttonAddToCart = ViewBindings.findChildViewById(rootView, id);
       if (buttonAddToCart == null) {
         break missingId;
       }
 
-      id = R.id.detailDescription;
-      TextView detailDescription = ViewBindings.findChildViewById(rootView, id);
-      if (detailDescription == null) {
+      id = R.id.buttonViewCart;
+      MaterialButton buttonViewCart = ViewBindings.findChildViewById(rootView, id);
+      if (buttonViewCart == null) {
         break missingId;
       }
 
-      id = R.id.detailImage;
-      ImageView detailImage = ViewBindings.findChildViewById(rootView, id);
-      if (detailImage == null) {
+      id = R.id.collapsingToolbar;
+      CollapsingToolbarLayout collapsingToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (collapsingToolbar == null) {
         break missingId;
       }
 
-      id = R.id.detailName;
-      TextView detailName = ViewBindings.findChildViewById(rootView, id);
-      if (detailName == null) {
+      id = R.id.imageProduct;
+      ImageView imageProduct = ViewBindings.findChildViewById(rootView, id);
+      if (imageProduct == null) {
         break missingId;
       }
 
-      id = R.id.detailPrice;
-      TextView detailPrice = ViewBindings.findChildViewById(rootView, id);
-      if (detailPrice == null) {
+      id = R.id.textProductDescription;
+      TextView textProductDescription = ViewBindings.findChildViewById(rootView, id);
+      if (textProductDescription == null) {
         break missingId;
       }
 
-      return new ActivityProductDetailBinding((ScrollView) rootView, buttonAddToCart,
-          detailDescription, detailImage, detailName, detailPrice);
+      id = R.id.textProductName;
+      TextView textProductName = ViewBindings.findChildViewById(rootView, id);
+      if (textProductName == null) {
+        break missingId;
+      }
+
+      id = R.id.textProductPrice;
+      TextView textProductPrice = ViewBindings.findChildViewById(rootView, id);
+      if (textProductPrice == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityProductDetailBinding((CoordinatorLayout) rootView, appBarLayout,
+          buttonAddToCart, buttonViewCart, collapsingToolbar, imageProduct, textProductDescription,
+          textProductName, textProductPrice, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

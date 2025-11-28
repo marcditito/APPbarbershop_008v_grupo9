@@ -4,56 +4,77 @@ package com.example.barbershopapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ScrollView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.barbershopapp.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityAddProductBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Button buttonSave;
+  public final MaterialButton buttonSave;
 
   @NonNull
-  public final Button buttonTakePicture;
+  public final MaterialButton buttonSelectImage;
 
   @NonNull
-  public final EditText editDescription;
+  public final TextInputLayout descriptionInputLayout;
 
   @NonNull
-  public final EditText editName;
+  public final TextInputEditText editDescription;
 
   @NonNull
-  public final EditText editPrice;
+  public final TextInputEditText editName;
+
+  @NonNull
+  public final TextInputEditText editPrice;
 
   @NonNull
   public final ImageView imagePreview;
 
-  private ActivityAddProductBinding(@NonNull ScrollView rootView, @NonNull Button buttonSave,
-      @NonNull Button buttonTakePicture, @NonNull EditText editDescription,
-      @NonNull EditText editName, @NonNull EditText editPrice, @NonNull ImageView imagePreview) {
+  @NonNull
+  public final TextInputLayout nameInputLayout;
+
+  @NonNull
+  public final TextInputLayout priceInputLayout;
+
+  @NonNull
+  public final LinearLayout textNoImage;
+
+  private ActivityAddProductBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull MaterialButton buttonSave, @NonNull MaterialButton buttonSelectImage,
+      @NonNull TextInputLayout descriptionInputLayout, @NonNull TextInputEditText editDescription,
+      @NonNull TextInputEditText editName, @NonNull TextInputEditText editPrice,
+      @NonNull ImageView imagePreview, @NonNull TextInputLayout nameInputLayout,
+      @NonNull TextInputLayout priceInputLayout, @NonNull LinearLayout textNoImage) {
     this.rootView = rootView;
     this.buttonSave = buttonSave;
-    this.buttonTakePicture = buttonTakePicture;
+    this.buttonSelectImage = buttonSelectImage;
+    this.descriptionInputLayout = descriptionInputLayout;
     this.editDescription = editDescription;
     this.editName = editName;
     this.editPrice = editPrice;
     this.imagePreview = imagePreview;
+    this.nameInputLayout = nameInputLayout;
+    this.priceInputLayout = priceInputLayout;
+    this.textNoImage = textNoImage;
   }
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -79,31 +100,37 @@ public final class ActivityAddProductBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.buttonSave;
-      Button buttonSave = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton buttonSave = ViewBindings.findChildViewById(rootView, id);
       if (buttonSave == null) {
         break missingId;
       }
 
-      id = R.id.buttonTakePicture;
-      Button buttonTakePicture = ViewBindings.findChildViewById(rootView, id);
-      if (buttonTakePicture == null) {
+      id = R.id.buttonSelectImage;
+      MaterialButton buttonSelectImage = ViewBindings.findChildViewById(rootView, id);
+      if (buttonSelectImage == null) {
+        break missingId;
+      }
+
+      id = R.id.descriptionInputLayout;
+      TextInputLayout descriptionInputLayout = ViewBindings.findChildViewById(rootView, id);
+      if (descriptionInputLayout == null) {
         break missingId;
       }
 
       id = R.id.editDescription;
-      EditText editDescription = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText editDescription = ViewBindings.findChildViewById(rootView, id);
       if (editDescription == null) {
         break missingId;
       }
 
       id = R.id.editName;
-      EditText editName = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText editName = ViewBindings.findChildViewById(rootView, id);
       if (editName == null) {
         break missingId;
       }
 
       id = R.id.editPrice;
-      EditText editPrice = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText editPrice = ViewBindings.findChildViewById(rootView, id);
       if (editPrice == null) {
         break missingId;
       }
@@ -114,8 +141,27 @@ public final class ActivityAddProductBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAddProductBinding((ScrollView) rootView, buttonSave, buttonTakePicture,
-          editDescription, editName, editPrice, imagePreview);
+      id = R.id.nameInputLayout;
+      TextInputLayout nameInputLayout = ViewBindings.findChildViewById(rootView, id);
+      if (nameInputLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.priceInputLayout;
+      TextInputLayout priceInputLayout = ViewBindings.findChildViewById(rootView, id);
+      if (priceInputLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.textNoImage;
+      LinearLayout textNoImage = ViewBindings.findChildViewById(rootView, id);
+      if (textNoImage == null) {
+        break missingId;
+      }
+
+      return new ActivityAddProductBinding((CoordinatorLayout) rootView, buttonSave,
+          buttonSelectImage, descriptionInputLayout, editDescription, editName, editPrice,
+          imagePreview, nameInputLayout, priceInputLayout, textNoImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BarberShop App</string>
+    <string name="add_product">Agregar Nuevo Producto</string>
+    <string name="product_name">Nombre del producto</string>
+    <string name="product_description">Descripción</string>
+    <string name="product_price">Precio</string>
+    <string name="take_picture">Tomar Foto</string>
+    <string name="save">Guardar</string>
+    <string name="photo_success">¡Imagen capturada con éxito!</string>
+    <string name="camera_error">Error al abrir la cámara</string>
+    <string name="product_added">¡Producto agregado exitosamente!</string>
+    <string name="fix_errors">Por favor, corrija los errores</string>
+    <string name="exit_confirmation">¿Desea salir?</string>
+    <string name="unsaved_changes">Los cambios no guardados se perderán</string>
+    <string name="exit">Salir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">OK</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="product_list">Lista de productos</string>
+
+    <!-- Nuevas cadenas para la interfaz mejorada -->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_cart">Carrito</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_about">Acerca de</string>
+
+    <!-- Mensajes de retroalimentación -->
+    <string name="loading">Cargando…</string>
+    <string name="error_loading">Error al cargar los datos</string>
+    <string name="retry">Reintentar</string>
+    <string name="no_products">No hay productos disponibles</string>
+    <string name="empty_cart">Tu carrito está vacío</string>
+
+    <!-- Detalles del producto -->
+    <string name="product_details">Detalles del producto</string>
+    <string name="product_quantity">Cantidad</string>
+    <string name="total_price">Precio total</string>
+    <string name="category">Categoría</string>
+    <string name="availability">Disponibilidad</string>
+    <string name="in_stock">En stock</string>
+    <string name="out_of_stock">Agotado</string>
+
+    <!-- Acciones -->
+    <string name="share">Compartir</string>
+    <string name="favorite">Favorito</string>
+    <string name="remove">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="search">Buscar productos</string>
+    <string name="filter">Filtrar</string>
+    <string name="sort">Ordenar</string>
+
+    <!-- Mensajes de confirmación -->
+    <string name="confirm_delete">¿Está seguro de que desea eliminar este producto?</string>
+    <string name="confirm_empty_cart">¿Desea vaciar el carrito?</string>
+    <string name="confirm_order">¿Desea confirmar su pedido?</string>
+
+    <!-- Estado del pedido -->
+    <string name="order_confirmed">Pedido confirmado</string>
+    <string name="order_processing">Procesando pedido</string>
+    <string name="order_complete">Pedido completado</string>
+
+    <!-- Información de usuario -->
+    <string name="welcome_message">Bienvenido a BarberShop</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="profile_settings">Configuración del perfil</string>
+</resources>
+

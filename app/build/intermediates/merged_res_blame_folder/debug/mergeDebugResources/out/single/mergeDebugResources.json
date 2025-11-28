@@ -1,58 +1,102 @@
 [
     {
-        "merged": "com.example.barbershopapp-debug-48:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_dialog_signup.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/dialog_signup.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/layout_activity_cart.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/layout/activity_cart.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_item_cart.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/item_cart.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/drawable_ic_launcher_monochrome.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/drawable/ic_launcher_monochrome.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_item_product.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/item_product.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/mipmap_ic_launcher_round.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/mipmap/ic_launcher_round.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_main.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/layout_activity_main.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/layout/activity_main.xml"
+        "merged": "com.example.barbershopapp-debug-47:/drawable_ic_launcher_monochrome.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/drawable/ic_launcher_monochrome.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/xml/data_extraction_rules.xml"
+        "merged": "com.example.barbershopapp-debug-47:/mipmap_ic_launcher.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/mipmap/ic_launcher.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/xml_file_paths.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/xml/file_paths.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_main_simple.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_main_simple.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/mipmap_ic_launcher.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/mipmap/ic_launcher.xml"
+        "merged": "com.example.barbershopapp-debug-47:/xml_file_paths.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/xml/file_paths.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/layout_item_cart.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/layout/item_cart.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_simple_add_product.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_simple_add_product.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/layout_item_product.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/layout/item_product.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_add_product.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_add_product.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/xml_backup_rules.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/xml/backup_rules.xml"
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_product_detail.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_product_detail.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/drawable-v24_ic_launcher_background.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/drawable-v24/ic_launcher_background.xml"
+        "merged": "com.example.barbershopapp-debug-47:/mipmap_ic_launcher_round.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/mipmap/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/layout_activity_add_product.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/layout/activity_add_product.xml"
+        "merged": "com.example.barbershopapp-debug-47:/color_bottom_nav_color.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/color/bottom_nav_color.xml"
     },
     {
-        "merged": "com.example.barbershopapp-debug-48:/layout_activity_product_detail.xml.flat",
-        "source": "com.example.barbershopapp-main-50:/layout/activity_product_detail.xml"
+        "merged": "com.example.barbershopapp-debug-47:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_test_xano.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_test_xano.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/xml_backup_rules.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/drawable_button_background.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/drawable/button_background.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/drawable_card_background.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/drawable/card_background.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_main_backup.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_main_backup.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_cart.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/layout_activity_login.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/drawable_gradient_background.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/drawable-v24_ic_launcher_background.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/drawable-v24/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.barbershopapp-debug-47:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.barbershopapp-main-49:/xml/data_extraction_rules.xml"
     }
 ]

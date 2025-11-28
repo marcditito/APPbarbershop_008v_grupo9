@@ -4,59 +4,60 @@ package com.example.barbershopapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.barbershopapp.R;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityCartBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Button buttonCheckout;
+  public final MaterialButton buttonPurchase;
 
   @NonNull
-  public final RecyclerView cartRecyclerView;
+  public final MaterialCardView cartSummaryCard;
+
+  @NonNull
+  public final LinearLayout emptyCartView;
+
+  @NonNull
+  public final RecyclerView recyclerViewCart;
 
   @NonNull
   public final TextView textTotal;
 
   @NonNull
-  public final TextView textTotalLabel;
+  public final MaterialToolbar toolbar;
 
-  @NonNull
-  public final Toolbar toolbar;
-
-  @NonNull
-  public final LinearLayout totalLayout;
-
-  private ActivityCartBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonCheckout,
-      @NonNull RecyclerView cartRecyclerView, @NonNull TextView textTotal,
-      @NonNull TextView textTotalLabel, @NonNull Toolbar toolbar,
-      @NonNull LinearLayout totalLayout) {
+  private ActivityCartBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull MaterialButton buttonPurchase, @NonNull MaterialCardView cartSummaryCard,
+      @NonNull LinearLayout emptyCartView, @NonNull RecyclerView recyclerViewCart,
+      @NonNull TextView textTotal, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
-    this.buttonCheckout = buttonCheckout;
-    this.cartRecyclerView = cartRecyclerView;
+    this.buttonPurchase = buttonPurchase;
+    this.cartSummaryCard = cartSummaryCard;
+    this.emptyCartView = emptyCartView;
+    this.recyclerViewCart = recyclerViewCart;
     this.textTotal = textTotal;
-    this.textTotalLabel = textTotalLabel;
     this.toolbar = toolbar;
-    this.totalLayout = totalLayout;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -81,15 +82,27 @@ public final class ActivityCartBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonCheckout;
-      Button buttonCheckout = ViewBindings.findChildViewById(rootView, id);
-      if (buttonCheckout == null) {
+      id = R.id.buttonPurchase;
+      MaterialButton buttonPurchase = ViewBindings.findChildViewById(rootView, id);
+      if (buttonPurchase == null) {
         break missingId;
       }
 
-      id = R.id.cartRecyclerView;
-      RecyclerView cartRecyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (cartRecyclerView == null) {
+      id = R.id.cartSummaryCard;
+      MaterialCardView cartSummaryCard = ViewBindings.findChildViewById(rootView, id);
+      if (cartSummaryCard == null) {
+        break missingId;
+      }
+
+      id = R.id.emptyCartView;
+      LinearLayout emptyCartView = ViewBindings.findChildViewById(rootView, id);
+      if (emptyCartView == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewCart;
+      RecyclerView recyclerViewCart = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewCart == null) {
         break missingId;
       }
 
@@ -99,26 +112,14 @@ public final class ActivityCartBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textTotalLabel;
-      TextView textTotalLabel = ViewBindings.findChildViewById(rootView, id);
-      if (textTotalLabel == null) {
-        break missingId;
-      }
-
       id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      id = R.id.totalLayout;
-      LinearLayout totalLayout = ViewBindings.findChildViewById(rootView, id);
-      if (totalLayout == null) {
-        break missingId;
-      }
-
-      return new ActivityCartBinding((ConstraintLayout) rootView, buttonCheckout, cartRecyclerView,
-          textTotal, textTotalLabel, toolbar, totalLayout);
+      return new ActivityCartBinding((CoordinatorLayout) rootView, buttonPurchase, cartSummaryCard,
+          emptyCartView, recyclerViewCart, textTotal, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
