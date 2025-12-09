@@ -1,50 +1,50 @@
 [
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/dialog_signup.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/dialog_signup.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/item_product.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/item_product.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_add_product.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_add_product.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_add_product.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_add_product.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_test_xano.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_test_xano.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_login.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_simple_add_product.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_simple_add_product.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/item_cart.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/item_cart.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_product_detail.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_product_detail.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_test_xano.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_test_xano.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/item_product.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/item_product.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_simple_add_product.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_simple_add_product.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_main_backup.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_main_backup.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_cart.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_cart.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_main_simple.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_main_simple.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/item_cart.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/item_cart.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/dialog_signup.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/dialog_signup.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_main.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_main.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_product_detail.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_product_detail.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_login.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_login.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_main_backup.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_main_backup.xml"
     },
     {
-        "merged": "com.example.barbershopapp-mergeDebugResources-46:/layout/activity_cart.xml",
-        "source": "com.example.barbershopapp-main-49:/layout/activity_cart.xml"
+        "merged": "com.example.barbershopapp-mergeDebugResources-56:/layout/activity_main_simple.xml",
+        "source": "com.example.barbershopapp-main-59:/layout/activity_main_simple.xml"
     }
 ]

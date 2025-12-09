@@ -16,7 +16,14 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <!-- Permisos para animaciones y funciones nativas -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SENSOR" />
+
     <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.proximity" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.light" android:required="false" />
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
     <application
@@ -63,6 +70,17 @@
             android:label="Detalles del Producto"
             android:parentActivityName=".ui.MainActivity" />
 
+        <activity
+            android:name=".ui.SalesActivity"
+            android:exported="false"
+            android:label="Ventas"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:exported="false"
+            android:label="Perfil"
+            android:parentActivityName=".ui.MainActivity" />
 
         <!-- FileProvider para manejo de imágenes -->
         <provider

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.barbershopapp-mergeDebugResources-45:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.barbershopapp-mergeDebugResources-55:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "C:\\Users\\duran\\.gradle\\caches\\8.13\\transforms\\220965f26b2ea384b1a102ec763c461e\\transformed\\core-1.15.0\\res\\values-en-rXC\\values-en-rXC.xml",

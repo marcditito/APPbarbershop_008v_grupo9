@@ -44,219 +44,278 @@
 25-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:17:5-81
 25-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:17:22-78
 26
-27    <uses-feature
-27-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:19:5-85
-28        android:name="android.hardware.camera"
-28-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:19:19-57
-29        android:required="false" />
-29-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:19:58-82
-30    <uses-feature
-30-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:20:5-95
-31        android:name="android.hardware.camera.autofocus"
-31-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:20:19-67
-32        android:required="false" />
-32-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:20:68-92
-33
-34    <permission
-34-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
-35        android:name="com.example.barbershopapp.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-35-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
-36        android:protectionLevel="signature" />
-36-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
-37
-38    <uses-permission android:name="com.example.barbershopapp.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-38-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
-38-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
-39
-40    <application
-40-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:22:5-78:19
-41        android:allowBackup="true"
-41-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:23:9-35
-42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-42-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
-43        android:debuggable="true"
-44        android:extractNativeLibs="false"
-45        android:icon="@mipmap/ic_launcher"
-45-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:24:9-43
-46        android:label="@string/app_name"
-46-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:25:9-41
-47        android:roundIcon="@mipmap/ic_launcher_round"
-47-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:26:9-54
-48        android:supportsRtl="true"
-48-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:27:9-35
-49        android:testOnly="true"
-50        android:theme="@style/Theme.BarberShopApp" >
-50-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:28:9-51
-51
-52        <!-- LoginActivity es ahora la actividad principal -->
-53        <activity
-53-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:32:9-40:20
-54            android:name="com.example.barbershopapp.ui.LoginActivity"
-54-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:33:13-45
-55            android:exported="true"
-55-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:34:13-36
-56            android:theme="@style/Theme.BarberShopApp.NoActionBar" >
-56-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:35:13-67
-57            <intent-filter>
-57-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:36:13-39:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:37:17-69
-58-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:37:25-66
-59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:38:17-77
-60-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:38:27-74
-61            </intent-filter>
-62        </activity>
-63        <activity
-63-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:42:9-46:46
-64            android:name="com.example.barbershopapp.ui.MainActivity"
-64-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:43:13-44
-65            android:exported="false"
-65-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:44:13-37
-66            android:launchMode="singleTop"
-66-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:46:13-43
-67            android:theme="@style/Theme.BarberShopApp.MainActivity" />
-67-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:45:13-68
-68        <activity
-68-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:48:9-52:61
-69            android:name="com.example.barbershopapp.ui.AddProductActivity"
-69-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:49:13-50
-70            android:exported="false"
-70-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:50:13-37
-71            android:label="Agregar Producto"
-71-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:51:13-45
-72            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
-72-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:52:13-58
-73        <activity
-73-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:54:9-58:61
-74            android:name="com.example.barbershopapp.ui.CartActivity"
-74-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:55:13-44
-75            android:exported="false"
-75-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:56:13-37
-76            android:label="Carrito de Compras"
-76-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:57:13-47
-77            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
-77-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:58:13-58
-78        <activity
-78-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:60:9-64:61
-79            android:name="com.example.barbershopapp.ui.ProductDetailActivity"
-79-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:61:13-53
-80            android:exported="false"
-80-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:62:13-37
-81            android:label="Detalles del Producto"
-81-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:63:13-50
-82            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
-82-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:64:13-58
-83
-84        <!-- FileProvider para manejo de imágenes -->
-85        <provider
-86            android:name="androidx.core.content.FileProvider"
-86-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:69:13-62
-87            android:authorities="com.example.barbershopapp.debug.fileprovider"
-87-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:70:13-64
+27    <!-- Permisos para animaciones y funciones nativas -->
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:20:5-66
+28-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:20:22-63
+29    <uses-permission android:name="android.permission.SENSOR" />
+29-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:21:5-65
+29-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:21:22-62
+30
+31    <uses-feature
+31-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:23:5-85
+32        android:name="android.hardware.camera"
+32-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:23:19-57
+33        android:required="false" />
+33-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:23:58-82
+34    <uses-feature
+34-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:24:5-99
+35        android:name="android.hardware.sensor.accelerometer"
+35-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:24:19-71
+36        android:required="false" />
+36-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:24:72-96
+37    <uses-feature
+37-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:25:5-95
+38        android:name="android.hardware.sensor.proximity"
+38-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:25:19-67
+39        android:required="false" />
+39-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:25:68-92
+40    <uses-feature
+40-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:26:5-91
+41        android:name="android.hardware.sensor.light"
+41-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:26:19-63
+42        android:required="false" />
+42-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:26:64-88
+43    <uses-feature
+43-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:27:5-95
+44        android:name="android.hardware.camera.autofocus"
+44-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:27:19-67
+45        android:required="false" />
+45-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:27:68-92
+46
+47    <permission
+47-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+48        android:name="com.example.barbershopapp.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.example.barbershopapp.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:29:5-96:19
+54        android:allowBackup="true"
+54-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:30:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.15.0] C:\Users\duran\.gradle\caches\8.13\transforms\220965f26b2ea384b1a102ec763c461e\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+56        android:debuggable="true"
+57        android:extractNativeLibs="false"
+58        android:icon="@mipmap/ic_launcher"
+58-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:31:9-43
+59        android:label="@string/app_name"
+59-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:32:9-41
+60        android:roundIcon="@mipmap/ic_launcher_round"
+60-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:33:9-54
+61        android:supportsRtl="true"
+61-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:34:9-35
+62        android:testOnly="true"
+63        android:theme="@style/Theme.BarberShopApp" >
+63-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:35:9-51
+64
+65        <!-- LoginActivity es ahora la actividad principal -->
+66        <activity
+66-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:39:9-47:20
+67            android:name="com.example.barbershopapp.ui.LoginActivity"
+67-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:40:13-45
+68            android:exported="true"
+68-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:41:13-36
+69            android:theme="@style/Theme.BarberShopApp.NoActionBar" >
+69-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:42:13-67
+70            <intent-filter>
+70-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:43:13-46:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:44:17-69
+71-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:44:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:45:17-77
+73-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:45:27-74
+74            </intent-filter>
+75        </activity>
+76        <activity
+76-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:49:9-53:46
+77            android:name="com.example.barbershopapp.ui.MainActivity"
+77-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:50:13-44
+78            android:exported="false"
+78-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:51:13-37
+79            android:launchMode="singleTop"
+79-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:53:13-43
+80            android:theme="@style/Theme.BarberShopApp.MainActivity" />
+80-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:52:13-68
+81        <activity
+81-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:55:9-59:61
+82            android:name="com.example.barbershopapp.ui.AddProductActivity"
+82-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:56:13-50
+83            android:exported="false"
+83-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:57:13-37
+84            android:label="Agregar Producto"
+84-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:58:13-45
+85            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+85-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:59:13-58
+86        <activity
+86-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:61:9-65:61
+87            android:name="com.example.barbershopapp.ui.CartActivity"
+87-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:62:13-44
 88            android:exported="false"
-88-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:71:13-37
-89            android:grantUriPermissions="true" >
-89-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:72:13-47
-90            <meta-data
-90-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:73:13-75:54
-91                android:name="android.support.FILE_PROVIDER_PATHS"
-91-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:74:17-67
-92                android:resource="@xml/file_paths" />
-92-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:75:17-51
-93        </provider>
-94
-95        <activity
-95-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-96-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-97            android:exported="false"
-97-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-98-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-99
-100        <provider
-100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-101            android:name="androidx.startup.InitializationProvider"
-101-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
-102            android:authorities="com.example.barbershopapp.debug.androidx-startup"
-102-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
-103            android:exported="false" >
-103-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
-104            <meta-data
-104-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-105-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
-106                android:value="androidx.startup" />
-106-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
-107            <meta-data
-107-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\duran\.gradle\caches\8.13\transforms\15dab5fa19dcf655f1e1e663d5b4449f\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
-108                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-108-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\duran\.gradle\caches\8.13\transforms\15dab5fa19dcf655f1e1e663d5b4449f\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
-109                android:value="androidx.startup" />
-109-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\duran\.gradle\caches\8.13\transforms\15dab5fa19dcf655f1e1e663d5b4449f\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
-110            <meta-data
-110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-111                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-112                android:value="androidx.startup" />
-112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-113        </provider>
-114
-115        <service
-115-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
-116            android:name="androidx.room.MultiInstanceInvalidationService"
-116-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
-117            android:directBootAware="true"
-117-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
-118            android:exported="false" />
-118-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
-119
-120        <meta-data
-120-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\b749eb513b6dc5e4070622837d494a86\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-121            android:name="com.google.android.gms.version"
-121-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\b749eb513b6dc5e4070622837d494a86\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-122            android:value="@integer/google_play_services_version" />
-122-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\b749eb513b6dc5e4070622837d494a86\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-123
-124        <receiver
-124-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-125            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-126            android:directBootAware="false"
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-127            android:enabled="true"
-127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-128            android:exported="true"
-128-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-129            android:permission="android.permission.DUMP" >
-129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-130            <intent-filter>
-130-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-131                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-132            </intent-filter>
-133            <intent-filter>
-133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-134                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-135            </intent-filter>
-136            <intent-filter>
-136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-137                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-138            </intent-filter>
-139            <intent-filter>
-139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-140                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-141            </intent-filter>
-142        </receiver>
-143    </application>
+88-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:63:13-37
+89            android:label="Carrito de Compras"
+89-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:64:13-47
+90            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+90-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:65:13-58
+91        <activity
+91-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:67:9-71:61
+92            android:name="com.example.barbershopapp.ui.ProductDetailActivity"
+92-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:68:13-53
+93            android:exported="false"
+93-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:69:13-37
+94            android:label="Detalles del Producto"
+94-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:70:13-50
+95            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+95-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:71:13-58
+96        <activity
+96-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:73:9-77:61
+97            android:name="com.example.barbershopapp.ui.SalesActivity"
+97-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:74:13-45
+98            android:exported="false"
+98-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:75:13-37
+99            android:label="Ventas"
+99-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:76:13-35
+100            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+100-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:77:13-58
+101        <activity
+101-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:79:9-83:61
+102            android:name="com.example.barbershopapp.ui.ProfileActivity"
+102-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:80:13-47
+103            android:exported="false"
+103-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:81:13-37
+104            android:label="Perfil"
+104-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:82:13-35
+105            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+105-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:83:13-58
+106
+107        <!-- FileProvider para manejo de imágenes -->
+108        <provider
+109            android:name="androidx.core.content.FileProvider"
+109-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:87:13-62
+110            android:authorities="com.example.barbershopapp.debug.fileprovider"
+110-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:88:13-64
+111            android:exported="false"
+111-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:89:13-37
+112            android:grantUriPermissions="true" >
+112-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:90:13-47
+113            <meta-data
+113-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:91:13-93:54
+114                android:name="android.support.FILE_PROVIDER_PATHS"
+114-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:92:17-67
+115                android:resource="@xml/file_paths" />
+115-->C:\Users\duran\OneDrive\Escritorio\BarberShopApp\BarberShopApp\app\src\main\AndroidManifest.xml:93:17-51
+116        </provider>
+117
+118        <activity
+118-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+119            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+119-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+120            android:exported="false"
+120-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+121-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\duran\.gradle\caches\8.13\transforms\2c626a0b8c2814a8ed1ed7825fec76a6\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+122
+123        <provider
+123-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+124            android:name="androidx.startup.InitializationProvider"
+124-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+125            android:authorities="com.example.barbershopapp.debug.androidx-startup"
+125-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+126            android:exported="false" >
+126-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+127            <meta-data
+127-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+128-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+129                android:value="androidx.startup" />
+129-->[androidx.emoji2:emoji2:1.3.0] C:\Users\duran\.gradle\caches\8.13\transforms\dc33f6be47006552796ec36a067558a6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\duran\.gradle\caches\8.13\transforms\15dab5fa19dcf655f1e1e663d5b4449f\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\duran\.gradle\caches\8.13\transforms\15dab5fa19dcf655f1e1e663d5b4449f\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+132                android:value="androidx.startup" />
+132-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\duran\.gradle\caches\8.13\transforms\15dab5fa19dcf655f1e1e663d5b4449f\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+133            <meta-data
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+134                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+135                android:value="androidx.startup" />
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+136        </provider>
+137
+138        <uses-library
+138-->[androidx.window:window:1.0.0] C:\Users\duran\.gradle\caches\8.13\transforms\534453e5a059ffad7250213eeff61fb0\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+139            android:name="androidx.window.extensions"
+139-->[androidx.window:window:1.0.0] C:\Users\duran\.gradle\caches\8.13\transforms\534453e5a059ffad7250213eeff61fb0\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+140            android:required="false" />
+140-->[androidx.window:window:1.0.0] C:\Users\duran\.gradle\caches\8.13\transforms\534453e5a059ffad7250213eeff61fb0\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+141        <uses-library
+141-->[androidx.window:window:1.0.0] C:\Users\duran\.gradle\caches\8.13\transforms\534453e5a059ffad7250213eeff61fb0\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+142            android:name="androidx.window.sidecar"
+142-->[androidx.window:window:1.0.0] C:\Users\duran\.gradle\caches\8.13\transforms\534453e5a059ffad7250213eeff61fb0\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0] C:\Users\duran\.gradle\caches\8.13\transforms\534453e5a059ffad7250213eeff61fb0\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
 144
-145</manifest>
+145        <service
+145-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+146            android:name="androidx.room.MultiInstanceInvalidationService"
+146-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+147            android:directBootAware="true"
+147-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+148            android:exported="false" />
+148-->[androidx.room:room-runtime:2.6.1] C:\Users\duran\.gradle\caches\8.13\transforms\d29d40442d2a8288c65d55e355373c3a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+149
+150        <meta-data
+150-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\b749eb513b6dc5e4070622837d494a86\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+151            android:name="com.google.android.gms.version"
+151-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\b749eb513b6dc5e4070622837d494a86\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+152            android:value="@integer/google_play_services_version" />
+152-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\b749eb513b6dc5e4070622837d494a86\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+153
+154        <receiver
+154-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+155            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+155-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+156            android:directBootAware="false"
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+157            android:enabled="true"
+157-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+158            android:exported="true"
+158-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+159            android:permission="android.permission.DUMP" >
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+160            <intent-filter>
+160-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+161                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+161-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+161-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+162            </intent-filter>
+163            <intent-filter>
+163-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+164                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+165            </intent-filter>
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+167                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+167-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+167-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+168            </intent-filter>
+169            <intent-filter>
+169-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+170                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+170-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+170-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\duran\.gradle\caches\8.13\transforms\45af6fad692ec38702a0ea2594615f15\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+171            </intent-filter>
+172        </receiver>
+173    </application>
+174
+175</manifest>

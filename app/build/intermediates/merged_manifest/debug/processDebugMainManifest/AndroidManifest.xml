@@ -24,8 +24,21 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <!-- Permisos para animaciones y funciones nativas -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SENSOR" />
+
     <uses-feature
         android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.light"
         android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
@@ -80,6 +93,16 @@
             android:exported="false"
             android:label="Detalles del Producto"
             android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+        <activity
+            android:name="com.example.barbershopapp.ui.SalesActivity"
+            android:exported="false"
+            android:label="Ventas"
+            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
+        <activity
+            android:name="com.example.barbershopapp.ui.ProfileActivity"
+            android:exported="false"
+            android:label="Perfil"
+            android:parentActivityName="com.example.barbershopapp.ui.MainActivity" />
 
         <!-- FileProvider para manejo de imágenes -->
         <provider
@@ -111,6 +134,13 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

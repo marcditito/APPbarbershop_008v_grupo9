@@ -9,9 +9,14 @@ import android.widget.TextView
 import android.widget.Button
 import android.graphics.Color
 import android.view.Gravity
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.barbershopapp.model.CartItem
 import com.example.barbershopapp.model.ProductItem
+import com.example.barbershopapp.utils.AnimationUtils
+import com.example.barbershopapp.utils.NativeAndroidUtils
+import com.example.barbershopapp.utils.NavigationManager
+import com.example.barbershopapp.utils.VisualFeedbackUtils
 
 /**
  * MainActivity FULLSTACK PROFESIONAL
@@ -35,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         ProductItem("6", "Cera para Bigote", "Cera especial para dar forma al bigote", 9.99, "Barba")
     )
 
+    // Gestor de sensores nativo
+    private var sensorManager: NativeAndroidUtils.SensorManagerHelper? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -47,12 +55,21 @@ class MainActivity : AppCompatActivity() {
             // Crear UI completamente funcional
             createFullFunctionalUI()
 
+            // ✨ INICIALIZAR SENSORES NATIVOS DE ANDROID
+            initializeNativeSensors()
+
             Log.d("MainActivity", "✅ MainActivity funcional inicializada exitosamente")
 
         } catch (e: Exception) {
             Log.e("MainActivity", "❌ Error en MainActivity, creando UI de emergencia", e)
             createEmergencyUI(e)
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // 🛑 Detener sensores cuando la actividad se destruya
+        stopNativeSensors()
     }
 
     private fun createFullFunctionalUI() {
@@ -474,6 +491,13 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 setOnClickListener {
+                    // 🎬 Animar botón al presionar
+                    AnimationUtils.animateClickScale(this)
+                    // 📳 Vibración háptica
+                    NativeAndroidUtils.vibrateClick(this@MainActivity)
+                    // ✨ Visual feedback para emulador
+                    VisualFeedbackUtils.pulseView(this, Color.YELLOW, 300)
+                    // 🚀 Navegar
                     navigateToAddProduct()
                 }
             }
@@ -490,6 +514,13 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 setOnClickListener {
+                    // 🎬 Animar con escala
+                    AnimationUtils.animateClickScale(this)
+                    // 📳 Vibración éxito
+                    NativeAndroidUtils.vibrateSuccess(this@MainActivity)
+                    // ✨ Visual feedback para emulador
+                    VisualFeedbackUtils.rippleEffect(this, 300)
+                    // 🚀 Navegar
                     navigateToCart()
                 }
             }
@@ -582,6 +613,14 @@ class MainActivity : AppCompatActivity() {
                 setPadding(16, 12, 16, 12)
 
                 setOnClickListener {
+                    // 🎬 Animar con salto/bounce
+                    AnimationUtils.animateBounce(this, 30f)
+                    // 📳 Vibración de éxito
+                    NativeAndroidUtils.vibrateSuccess(this@MainActivity)
+                    // ✨ Visual feedback para emulador
+                    VisualFeedbackUtils.burstAnimation(this, 500)
+                    VisualFeedbackUtils.confirmationFeedback(this@MainActivity, true)
+                    // Agregar al carrito
                     addToCart(product)
                 }
             }
@@ -619,7 +658,15 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     setOnClickListener {
+                        // 🎬 Animar con slide desde abajo
+                        AnimationUtils.animateSlideInFromBottom(this, 300)
+                        // 📳 Vibración
+                        NativeAndroidUtils.vibrateClick(this@MainActivity)
+                        // ✨ Visual feedback para emulador
+                        VisualFeedbackUtils.glowEffect(this, 300)
+                        // Toast con mensaje
                         showToast(message)
+                        // Ejecutar acción de navegación
                         action()
                     }
                 }
@@ -670,8 +717,8 @@ class MainActivity : AppCompatActivity() {
     private fun navigateToSales() {
         try {
             Log.d("MainActivity", "Navegando a historial de ventas")
-            // Crear intent para SalesActivity (se puede implementar después)
-            showToast("💰 Historial de ventas - Próximamente disponible")
+            val intent = Intent(this, SalesActivity::class.java)
+            startActivity(intent)
         } catch (e: Exception) {
             showToast("⚠️ Error abriendo ventas")
         }
@@ -680,7 +727,8 @@ class MainActivity : AppCompatActivity() {
     private fun navigateToProfile() {
         try {
             Log.d("MainActivity", "Navegando a perfil de usuario")
-            showToast("👤 Perfil de usuario - Configuración próximamente")
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         } catch (e: Exception) {
             showToast("⚠️ Error abriendo perfil")
         }
@@ -803,6 +851,57 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+        }
+    }
+
+    /**
+     * 📱 Inicializar sensores nativo de Android
+     * - Acelerómetro para detección de sacudidas
+     * - Vibración háptica
+     */
+    private fun initializeNativeSensors() {
+        try {
+            Log.d("MainActivity", "🔌 Inicializando sensores nativos...")
+
+            // Inicializar gestor de sensores
+            sensorManager = NativeAndroidUtils.SensorManagerHelper(this)
+
+            // 🤝 Detector de sacudidas: cuando el usuario agita el teléfono
+            sensorManager?.startAccelerometerDetection {
+                Log.d("MainActivity", "🎉 ¡SACUDIDA DETECTADA! Refrescando carrito...")
+                // Vibración con patrón special
+                NativeAndroidUtils.vibrateSuccess(this)
+                // Animar botón de carrito
+                cartButton.let {
+                    AnimationUtils.animatePulse(it)
+                }
+                // ✨ VISUAL FEEDBACK para emulador
+                VisualFeedbackUtils.fullVisualFeedback(
+                    this,
+                    "¡Carrito refrescado por sacudida!",
+                    cartButton
+                )
+                // Mostrar toast
+                showToast("🔄 ¡Carrito refrescado por sacudida!")
+                // Actualizar display
+                updateCartDisplay()
+            }
+
+            Log.d("MainActivity", "✅ Sensores nativos inicializados correctamente")
+        } catch (e: Exception) {
+            Log.e("MainActivity", "⚠️ Error inicializando sensores", e)
+        }
+    }
+
+    /**
+     * 🛑 Detener sensores cuando se cierre la actividad
+     */
+    private fun stopNativeSensors() {
+        try {
+            sensorManager?.stopAccelerometerDetection()
+            Log.d("MainActivity", "✅ Sensores detenidos")
+        } catch (e: Exception) {
+            Log.e("MainActivity", "Error deteniendo sensores", e)
         }
     }
 
